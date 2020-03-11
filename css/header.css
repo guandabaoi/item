@@ -1,0 +1,16 @@
+.header_color{background-color: #24262e;}
+.header{margin-top: 5px;}
+.my_text{width:12rem;height:2rem;}
+.my_text1{border-radius: 4px;}
+.breadcrumb-item+.breadcrumb-item::before{
+	content: "|";
+}
+.my_logo{width:3rem;height:3rem;}
+.qq_img{width:3rem;height:3rem;border-radius:50%;background-color: #3caae3;padding:13px;}
+
+/*footer*/
+.img_top{border-radius:0.4rem;}
+.footer_color{background-color: #24262e;}
+.body_size{width:1300px;margin:0 auto;}
+.footer_size{width:1300px;margin:0 auto;font-size:12px;}
+.row_size{width:1px;height:12px;background-color:#f00;}

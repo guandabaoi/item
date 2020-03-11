@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+<body>
+<div class="container-fluid">
+	<!-- 顶部 -->
+
+	<div class="header_color d-flex">
+		<div class="p-1">
+			<img class="w-75" src="img/header/logo.svg">
+		</div>
+  <!-- 导航栏 -->
+	<ul class="nav mx-5 mt-2">
+    <li class="nav-item">
+        <a class="nav-link text-white" href="">首页</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white font-weight-bold" href="">论坛</a>
+  </li>
+    <li class="nav-item">
+        <a class="nav-link text-white" href="">作品</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white" href="">模型</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white" href="">软装</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white" href="">灵感</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-danger" href="">年费</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white" href="">1T硬盘</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white font-weight-bold" href="">···</a>
+    </li>
+</ul>	
+	<!---->
+		<div>
+			<input class="my_text bg-transparent border-1 mt-3 text-white" type="text" placeholder="请输入您要搜索的内容">
+		</div>
+		
+		<ul class="nav mt-2">
+			<li class="nav-item ml-5">
+				<a data-toggle="modal" data-target="#login_header" class="nav-link text-white" href="">登录</a>
+				<div id="login_header" class="modal">                                                                            <!--1-->
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p>用户登录</p>
+								<button data-dismiss="modal" class="btn btn-danger"><a class="h5" href="">×</a></button>
+							</div>
+
+							<div class="modal-body mx-5 mt-2">                                                                  <!--modal body-->
+						<!--1.1 模态框弹出-->	
+							<div class="row no-gutters mb-4 ">
+						    <ul class="nav nav-tabs">
+								<li class="nav-item">
+									<a data-toggle="tab" class="text-muted nav-link active" href="#user_login">用户名登录</a>
+								</li>
+								<li class="nav-item">
+									<a data-toggle="tab" class="text-muted nav-link" href="#phone_login">手机登录</a>
+								</li>
+								<li>
+									<a data-toggle="tab" class="text-muted nav-link" href="#QQ_login">QQ登录</a>
+								</li>
+							</ul>
+							</div>	
+								<!-- 2.1 用户名登录 登录导航切换-->
+								<div class="tab-content">
+							    <div id="user_login" class="tab-pane active">
+							        <div class="text-center mb-4">
+							            <input class="my_text1 w-100 py-2 px-3" type="text" placeholder="用户名/邮箱/UID">
+							        </div>
+							        <div class="text-center mb-4">
+							            <input class="my_text1 w-100 py-2 px-3" type="text" placeholder="密码">
+							        </div>
+							        <div class="text-center mb-4 dropdown">
+							            <button class="btn  dropdown-toggle w-100 p-2" data-toggle="dropdown">安全提问(未设置请忽略)</button>
+							                <ul class="dropdown-menu">
+							                    <li><a class="text-muted" href="">万花丛中过</a></li>
+							                    <li><a class="text-muted" href="">欲把西湖比西子</a></li>
+							                    <li><a class="text-muted" href="">一枝红杏出墙来</a></li>
+							                    <li><a class="text-muted" href="">夜半钟声到客船</a></li>
+							                    <li><a class="text-muted" href="">眼前一笑皆知己</a></li>
+							                </ul>
+							        </div>
+							        <div class="text-center">
+							            <a class="btn btn-warning w-100 p-2" href="">登录</a>
+							        </div>
+							        <div class="d-flex flex-wrap justify-content-between mt-3">
+							            <div>
+							                <input type="checkbox">下次自动登录
+							            </div>
+							            <div>
+							                <ul class="breadcrumb bg-transparent p-0">
+							                    <li class="breadcrumb-item"><a class="text-warning" href="">注册</a></li>
+							                    <li class="breadcrumb-item"><a class="text-warning" href="">忘记密码</a></li>
+							                </ul>
+							            </div>
+							        </div>
+							        <div>
+							            <p class="text-center">第三方账号登录</p>
+							        </div>
+							        <div class="d-flex flex-wrap justify-content-center mb-4">
+							            <div class="my_logo">
+							                <img class="w-100" src="img/header/weixin_logo.png">
+							            </div>  
+							        </div>
+							    </div>
+									<!--2.2  手机号码登录-->
+									<div id="phone_login" class="tab-pane">
+								    <div class="text-center mb-4">
+								        <input class="my_text1 w-100 py-2 px-3" type="text" placeholder="手机号码">
+								    </div>
+								    <div class="text-center mb-4">
+								        <input class="my_text1 w-100 py-2 px-3" type="text" placeholder="密码">
+								    </div>
+								    <div class="text-center">
+								        <a class="btn btn-warning w-100 p-2" href="">登录</a>
+								    </div>
+								    <div class="d-flex flex-wrap justify-content-between mt-3">
+								        <div>
+								            <input type="checkbox">下次自动登录
+								        </div>
+								        <div>
+								            <ul class="breadcrumb bg-transparent p-0">
+								                <li class="breadcrumb-item"><a class="text-warning" href="">找回密码</a></li>
+								                <li class="breadcrumb-item"><a class="text-warning" href="">立即注册</a></li>
+								            </ul>
+								        </div>
+								    </div>
+								    <div>
+								        <p class="text-center">第三方账号登录</p>
+								    </div>
+								    <div class="d-flex flex-wrap justify-content-center mb-4">
+								        <div class="my_logo">
+								            <a href=""><img class="w-100 qq_img" src="img/header/qq.png"></a>
+								        </div>  
+								    </div>
+									</div>
+									<!--2.3  	QQ登录-->
+									<div id="QQ_login" class="tab-pane">
+								    <div class="text-center mb-4">
+								        <input class="my_text1 w-100 py-2 px-3" type="text" placeholder="支持QQ账号/QQ邮箱/手机号登录">
+								    </div>
+								    <div class="text-center mb-4">
+								        <input class="my_text1 w-100 py-2 px-3" type="text" placeholder="密码">
+								    </div>
+								    <div class="text-center">
+								        <a class="btn btn-success w-100 p-2" href="">登录</a>
+								    </div>
+								    <div class="d-flex flex-wrap justify-content-between mt-3">
+								        <div>
+								            <input type="checkbox">下次自动登录
+								        </div>
+								        <div>
+								            <ul class="breadcrumb bg-transparent p-0">
+								                <li class="breadcrumb-item"><a class="text-warning" href="">忘了密码</a></li>
+								                <li class="breadcrumb-item"><a class="text-warning" href="">注册新账号</a></li>
+								            </ul>
+								        </div>
+								    </div>
+								    <div>
+								        <p class="text-center">第三方账号登录</p>
+								    </div>
+								    <div class="d-flex flex-wrap justify-content-center mb-4">
+								        <div class="my_logo">
+								            <a href=""><img class="w-100 qq_img" src="img/header/qq.png"></a>
+								        </div>  
+								    </div>
+									</div>
+								</div>                          <!-- 水平导航  结尾 	-->
+
+								</div>                                                                                            <!--modal body-->
+							</div>
+							</div>
+						</div>                                                                                                    <!--1-->
+			</li>
+			<li class="nav-item">
+				<a data-toggle="modal" data-target="#reg_header" class="nav-link text-white" href="">注册</a>
+				<div id="reg_header" class="modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<a href="">点击注册</a>
+								<a href="">已有账号？现在登录</a>
+							</div>
+							<div class="modal-body">
+								<!--1-->
+								<div class="row">
+									<div class="col-3">
+										<div class="text-right mt-2">
+											<p class="py-2">*邀请码:</p>
+										</div>
+									</div>
+									<div class="col-9">
+										<input class="w-75 p-2 my-2" type="text">
+										<p class="m-0"><a class="text-danger" href="">还没有邀请码？点击此处购买</a></p>
+									</div>
+								</div>
+								<!--2-->
+								<div class="row">
+									<div class="col-3">
+										<div class="text-right mt-2">
+											<p class="py-2">*用户名:</p>
+										</div>
+									</div>
+									<div class="col-9">
+										<input class="w-75 p-2 my-1" type="text">
+									</div>
+								</div>
+								<!--3-->
+								<div class="row">
+									<div class="col-3">
+										<div class="text-right mt-2">
+											<p class="py-2">*密码:</p>
+										</div>
+									</div>
+									<div class="col-9">
+										<input class="w-75 p-2 my-1" type="text">
+									</div>
+								</div>
+								<!--4-->
+								<div class="row">
+									<div class="col-3">
+										<div class="text-right mt-2">
+											<p class="py-2">*确认密码:</p>
+										</div>
+									</div>
+									<div class="col-9">
+										<input class="w-75 p-2 my-1" type="text">
+									</div>
+								</div>
+								<!--5-->
+								<div class="row">
+									<div class="col-3">
+										<div class="text-right mt-2">
+											<p class="py-2">*Email:</p>
+										</div>
+									</div>
+									<div class="col-9">
+										<input class="w-75 p-2 my-1" type="text">
+									</div>
+								</div>
+								<!--6-->
+								<div class="row">
+									<div class="col-3">
+										<div class="text-right mt-2">
+											<p class="py-2">*联系方式:</p>
+										</div>
+									</div>
+									<div class="col-9">
+										<input class="w-75 p-2 my-1" type="text">
+									</div>
+								</div>
+								<!--7-->
+								<div class="row">
+									<div class="col-3">
+										<div class="text-right mt-2">
+											<p class="py-2">*QQ:</p>
+										</div>
+									</div>
+									<div class="col-9">
+										<input class="w-75 p-2 my-1" type="text">
+										<p class="text-muted m-0">设置我的QQ在线状态</p>
+										<div>
+											<input type="checkbox">我已阅读并接受
+											<span><a class="text-warning" href="">用户协议</a></span>
+											<div >
+								        <a class="btn btn-warning w-75 p-2" href="">提交</a>
+								    </div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>		
+					</div>
+				</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--footer-->
+	<!-- 图区 -->
+	<div class="d-flex justify-content-center mb-1 mt-5">
+		<img class="img_top" src="img/footer/125305znuupu3g3u35uh8k.png">
+	</div>
+	<div class="d-flex justify-content-center mb-1">
+		<img class="img_top" src="img/footer/185717jvghms1a1agdbszv.png">
+	</div>
+	<!-- 底部 -->
+	<div class="footer footer_color">
+		<div>
+			<!-- footer第一部分 -->
+			<div class="d-flex body_size justify-content-between py-5">
+				<div class="d-flex pt-2">
+					<div><img src="img/footer/footer-mobile.svg"></div>
+				<p class="text-secondary ml-2">移动版</p>
+				</div>
+				<p class="text-secondary pt-2">关于我们</p>
+				<p class="text-secondary pt-2">加入我们</p>
+				<p class="text-secondary pt-2">用户协议</p>
+				<p class="text-secondary pt-2">密码找回</p>
+				<p class="text-secondary pt-2">帮助中心</p>
+				<p class="text-secondary pt-2">联系我们</p>
+				<p class="text-secondary pt-2">在线提交问题/建议</p>
+				<p class="text-secondary pt-2">中文</p>
+				<p class="text-secondary pt-2">English</p>
+				<div><img src="img/footer/label_sm_90030.png"></div>
+			</div>
+			<!--分界线-->
+			
+			<!--footer第二部分-->
+			<div class="footer_size d-flex justify-content-between">
+				<p class="text-secondary">北京拓者装饰设计有限公司</p>
+				<p class="text-secondary">经营性备案-京ICP证150941号</p>
+				<p class="text-secondary">经营性备案-京ICP证150941号</p>
+				<p class="text-secondary">客服电话: 400-119-1118</p>
+				<div class="d-flex">
+					<div><img class="pr-1" src="img/footer/icon-police.png"></div>
+					<p class="text-secondary">京公安网备11010502039540号</p>
+				</div>
+			</div>
+			<div class="footer_size d-flex justify-content-between">
+				<p class="text-secondary">网上有害信息举报专区</p>
+				<p class="text-secondary">战略合作QQ：149084715</p>
+				<p class="text-secondary">素材销售QQ：743365</p>
+				<p class="text-secondary">投诉QQ：1490841715</p>
+				<p class="text-secondary">客服QQ：406158</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>	
